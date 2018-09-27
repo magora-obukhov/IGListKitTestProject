@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCollectionViewCell" id="TWV-xM-Ycf" customClass="CustomCollectionViewCell" customModule="IGListKitTestProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="437" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="437" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeD-ZI-Adr">
+                        <rect key="frame" x="0.0" y="0.0" width="437" height="120"/>
+                        <color key="backgroundColor" red="0.83649190097625326" green="0.87405553702976879" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="PeD-ZI-Adr" secondAttribute="bottom" id="Blz-UZ-Amz"/>
+                <constraint firstAttribute="trailing" secondItem="PeD-ZI-Adr" secondAttribute="trailing" id="iH1-ac-jkH"/>
+                <constraint firstItem="PeD-ZI-Adr" firstAttribute="leading" secondItem="TWV-xM-Ycf" secondAttribute="leading" id="nU4-7O-Xhp"/>
+                <constraint firstItem="PeD-ZI-Adr" firstAttribute="top" secondItem="TWV-xM-Ycf" secondAttribute="top" id="wZ7-81-KNm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="r9T-s2-cG7"/>
+            <size key="customSize" width="437" height="120"/>
+            <connections>
+                <outlet property="label" destination="PeD-ZI-Adr" id="s2F-BL-Ivb"/>
+            </connections>
+            <point key="canvasLocation" x="110.5" y="-32"/>
+        </collectionViewCell>
+    </objects>
+</document>

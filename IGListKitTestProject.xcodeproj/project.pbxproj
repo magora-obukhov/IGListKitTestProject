@@ -12,9 +12,13 @@
 		52CC33BE215D0A96004D08DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CC33BC215D0A96004D08DD /* Main.storyboard */; };
 		52CC33C0215D0A97004D08DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CC33BF215D0A97004D08DD /* Assets.xcassets */; };
 		52CC33C3215D0A97004D08DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CC33C1215D0A97004D08DD /* LaunchScreen.storyboard */; };
+		52CC33CB215D1068004D08DD /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CC33CA215D1068004D08DD /* CustomCollectionViewCell.xib */; };
+		52CC33CD215D1089004D08DD /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CC33CC215D1089004D08DD /* CustomCollectionViewCell.swift */; };
+		E314180AFED416922E93C46F /* Pods_IGListKitTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD37BCF223F04DAE3F73446D /* Pods_IGListKitTestProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E322FD73FA9EAA602A849DC /* Pods-IGListKitTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitTestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKitTestProject/Pods-IGListKitTestProject.release.xcconfig"; sourceTree = "<group>"; };
 		52CC33B5215D0A96004D08DD /* IGListKitTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGListKitTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CC33B8215D0A96004D08DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CC33BA215D0A96004D08DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		52CC33BF215D0A97004D08DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52CC33C2215D0A97004D08DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52CC33C4215D0A97004D08DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52CC33CA215D1068004D08DD /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		52CC33CC215D1089004D08DD /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		8FAE71FB905F43C69D66A878 /* Pods-IGListKitTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitTestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKitTestProject/Pods-IGListKitTestProject.debug.xcconfig"; sourceTree = "<group>"; };
+		BD37BCF223F04DAE3F73446D /* Pods_IGListKitTestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGListKitTestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E314180AFED416922E93C46F /* Pods_IGListKitTestProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4ECC88F11FD579C17B06C666 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD37BCF223F04DAE3F73446D /* Pods_IGListKitTestProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		52CC33AC215D0A96004D08DD = {
 			isa = PBXGroup;
 			children = (
 				52CC33B7215D0A96004D08DD /* IGListKitTestProject */,
 				52CC33B6215D0A96004D08DD /* Products */,
+				F17A638501C15B53D20AB7DF /* Pods */,
+				4ECC88F11FD579C17B06C666 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				52CC33B8215D0A96004D08DD /* AppDelegate.swift */,
+				52CC33CA215D1068004D08DD /* CustomCollectionViewCell.xib */,
+				52CC33CC215D1089004D08DD /* CustomCollectionViewCell.swift */,
 				52CC33BA215D0A96004D08DD /* ViewController.swift */,
 				52CC33BC215D0A96004D08DD /* Main.storyboard */,
 				52CC33BF215D0A97004D08DD /* Assets.xcassets */,
@@ -64,6 +85,15 @@
 			path = IGListKitTestProject;
 			sourceTree = "<group>";
 		};
+		F17A638501C15B53D20AB7DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FAE71FB905F43C69D66A878 /* Pods-IGListKitTestProject.debug.xcconfig */,
+				3E322FD73FA9EAA602A849DC /* Pods-IGListKitTestProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52CC33C7215D0A97004D08DD /* Build configuration list for PBXNativeTarget "IGListKitTestProject" */;
 			buildPhases = (
+				795E4F572ABFA13DAC689787 /* [CP] Check Pods Manifest.lock */,
 				52CC33B1215D0A96004D08DD /* Sources */,
 				52CC33B2215D0A96004D08DD /* Frameworks */,
 				52CC33B3215D0A96004D08DD /* Resources */,
+				DAAB1E9C45FE6700D154D166 /* [CP] Embed Pods Frameworks */,
+				B65305125B32B8AEEC713C64 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,10 +158,65 @@
 				52CC33C3215D0A97004D08DD /* LaunchScreen.storyboard in Resources */,
 				52CC33C0215D0A97004D08DD /* Assets.xcassets in Resources */,
 				52CC33BE215D0A96004D08DD /* Main.storyboard in Resources */,
+				52CC33CB215D1068004D08DD /* CustomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		795E4F572ABFA13DAC689787 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IGListKitTestProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B65305125B32B8AEEC713C64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IGListKitTestProject/Pods-IGListKitTestProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAAB1E9C45FE6700D154D166 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IGListKitTestProject/Pods-IGListKitTestProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IGListKitTestProject/Pods-IGListKitTestProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52CC33B1215D0A96004D08DD /* Sources */ = {
@@ -136,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52CC33BB215D0A96004D08DD /* ViewController.swift in Sources */,
+				52CC33CD215D1089004D08DD /* CustomCollectionViewCell.swift in Sources */,
 				52CC33B9215D0A96004D08DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +367,7 @@
 		};
 		52CC33C8215D0A97004D08DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FAE71FB905F43C69D66A878 /* Pods-IGListKitTestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +386,7 @@
 		};
 		52CC33C9215D0A97004D08DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E322FD73FA9EAA602A849DC /* Pods-IGListKitTestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
